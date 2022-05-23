@@ -12,3 +12,19 @@ function getRandomInt(min, max) {
     min = Math.floor(min);
     return Math.floor(Math.random() * (max - min +1)) + min;
         }
+
+
+
+//array that stores the path of each img
+numbers=[one,two,three,four,five,six]
+
+nb1=getRandomInt(0,5)
+nb2=getRandomInt(0,5)
+
+img1=document.getElementsByClassName("img1")
+img2=document.getElementsByClassName("img2")
+result=document.getElementsByTagName("h1")
+
+//change the source input of the image tag in the html file
+img1[0].src=numbers[nb1]
+img2[0].src=numbers[nb2]
