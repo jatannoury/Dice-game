@@ -28,3 +28,12 @@ result=document.getElementsByTagName("h1")
 //change the source input of the image tag in the html file
 img1[0].src=numbers[nb1]
 img2[0].src=numbers[nb2]
+
+//function that prints the result at the top of the page
+function compare(nb1,nb2){
+    if (nb1>nb2)result[0].innerHTML="&#128681 Player 1 Wins"
+    else if (nb1<nb2)result[0].innerHTML="&#128681 Player 2 Wins"
+    else result[0].innerHTML="Draw"
+
+}
+compare(nb1,nb2);
